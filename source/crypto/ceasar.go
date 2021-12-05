@@ -2,9 +2,9 @@ package crypto
 import ()
 
 func EncryptROT(word string, rot int) string {
-	var cipher string; var num_case int;
+	var cipher string; var num_case int = 65;
 	for _,asc := range word {
-		if (asc >= 97 && asc <= 122) {num_case = 97;} else {num_case = 65;}
+		if (asc >= 97 && asc <= 122) {num_case = 97;}
 		if (asc == 32) {cipher += " "; continue;}
 		if ((asc > 91 && asc < 97) || asc < 65 || asc > 122) {cipher += string(asc); continue;}
 		// ---
@@ -14,9 +14,9 @@ func EncryptROT(word string, rot int) string {
 	return cipher;}
 
 func DecryptROT(word string, rot int) string {
-	var plain string; var num_case int;
+	var plain string; var num_case int = 65;
 	for _,asc := range word {
-		if (asc >= 97 && asc <= 122) {num_case = 97;} else {num_case = 65;}		
+		if (asc >= 97 && asc <= 122) {num_case = 97;}
 		if (asc == 32) {plain += " "; continue;}
 		if ((asc > 91 && asc < 97) || asc < 65 || asc > 122) {plain += string(asc); continue;}
 		// ---		
