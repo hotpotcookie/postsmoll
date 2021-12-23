@@ -1,0 +1,14 @@
+## URL request address
+http://localhost:3000/api/user/guest/add
+## HTTP request method
+POST
+## HTTP request body
+{
+	"username":"aster-max",
+	"fullname":"Snowy Oreo M.",
+	"phone":"08132123345",
+	"address":"Jl. Permata III B25, Mampang Prapatan, Pejaten Barat",
+	"postal_code":"12520",
+	"activation":1,
+	"password":"kucheng"
+}

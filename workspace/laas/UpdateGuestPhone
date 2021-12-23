@@ -1,0 +1,8 @@
+## URL request address
+http://localhost:3000/api/user/guest/profile/irsyadota/update/phone
+## HTTP request method
+PATCH
+## HTTP request body
+{
+	"phone": "082125337746"
+}

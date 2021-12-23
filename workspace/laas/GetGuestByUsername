@@ -1,0 +1,6 @@
+## URL request address
+http://localhost:3000/api/user/guest/profile/irsyadota
+## HTTP request method
+GET
+## HTTP request body
+{}
